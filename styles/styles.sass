@@ -1,0 +1,90 @@
+$small: 768px
+$medium: 992px
+$large: 1200px
+
+$gray-darker:  #222
+$gray-dark:  #333
+$gray: #555
+$gray-light: #777
+$gray-lighter: #eee
+
+body
+  font-weight: 200
+  padding-bottom: 50px
+
+.container-fluid
+  @media screen and (min-width: $small)
+    padding-left: 100px
+    padding-right: 100px
+
+  @media screen and (max-width: $small)
+    padding-left: 10px
+    padding-right: 10px
+
+h1, h2, h3
+  font-weight: 100
+
+h1
+  text-align: right
+
+h2
+  padding-bottom: 30px
+
+.selector
+  height: auto
+  display: block
+  margin: 0px
+
+  li
+    display: inline-block
+    padding: 10px 20px 10px 20px
+    border: 1px solid $gray-light
+    background: $gray-lighter
+
+.row
+  position: relative
+
+.title
+  position: absolute
+  color: white
+  bottom: 0
+  right: 30px
+  @media screen and (max-width: $small)
+    bottom: 20px
+
+.intro
+  padding-top: 50px
+
+.header-img
+  @media screen and (max-width: $small)
+    padding: 20px 0px 20px 0px
+
+h4
+  color: $gray-light
+  font-weight: 100
+
+.spaced
+  padding-bottom: 0px
+  padding-top: 50px
+
+.portfolio-content
+  padding: 40px 0px 40px 0px
+
+  @media screen and (min-width: $small)
+    position: relative
+    display: flex
+    align-items: center
+
+.portfolio-content:after
+  content: ''
+  position: absolute
+  width: 40%
+  left: 30%
+  bottom: 0
+  border-bottom: 1px solid $gray-lighter
+
+.portfolio-content:last-child:after
+  border-bottom: none
+
+.image-background
+  color: white
